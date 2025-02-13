@@ -28,7 +28,6 @@ li{
 }
 
 .navLinks:hover{
-    color:black;
     transform: scale(1.1);
     text-decoration: underline;
     text-decoration-style: underline;
@@ -44,7 +43,6 @@ li{
 
 body{
     background-color: rgba(7, 7, 27, 0.959);
-    /* background-color: rgba(15, 15, 40, 0.9); */
 }
 
 .footer{
@@ -60,4 +58,31 @@ body{
     color:white;
 }
 
-.containItems
+.mainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containItems{
+    height: 50%;
+    width: 90%;
+    background-color: rgba(30, 30, 49, 0.793);
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}   
+
+.item1{
+    background-color: rgba(15, 15, 40, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mainItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
