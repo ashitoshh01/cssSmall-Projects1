@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+#bars{
+    display: none;
+    color: white;
+    font-size: 2rem;
+}
+
 .navList{
     background: rgb(15,13,52);
 background: linear-gradient(90deg, rgba(15,13,52,1) 0%, rgba(124,32,126,1) 58%, rgba(19,90,105,1) 100%);
@@ -37,6 +43,7 @@ li{
 
 #navLogo{
     font-size: 2rem;
+    margin-left:5px ;
     font-weight: bolder;
     color:white;
 }
@@ -70,19 +77,42 @@ body{
     background-color: rgba(30, 30, 49, 0.793);
     color:white;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: auto; /* Center the container horizontally */
 }   
+
+.mainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .item1{
     background-color: rgba(15, 15, 40, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mainItems{
+    box-shadow: 10px 10px 10px rgb(83, 81, 81) ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(15, 15, 40, 0.9);
+    margin: 20px;
+    height:70%;
+    width:30%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+@media (max-width:540px) {
+    .navLinks{
+        display: none;
+    }
+    #bars{
+        display: inline;
+    }
 }
