@@ -107,8 +107,8 @@ body {
     align-items: center;
     background-color: rgba(15, 15, 40, 0.9);
     margin: 40px;
-    height:450px;
-    width:350px;
+    height:30.5em;
+    width:22em;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -144,13 +144,26 @@ body {
 
 
 .images{
-    height: 240px;
-    width:270px;
+    height: 15em;
+    width: 100%;
+    max-width: 20rem;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin-top:10px;
     margin-bottom:10px;
+}
+
+@media (max-width: 768px) {
+    .images {
+        height: 12em;
+    }
+}
+
+@media (max-width: 480px) {
+    .images {
+        height: 10em;
+    }
 }
 
 #GulabJamuns{
@@ -176,4 +189,3 @@ body {
 #Donuts{
     background-image: url(donuts.jpg);
 }
-
